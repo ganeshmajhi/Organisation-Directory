@@ -1,0 +1,162 @@
+<main class="page-shell">
+  <header class="topbar">
+    <div class="brand-mark" aria-hidden="true">OD</div>
+    <div class="brand-copy">
+      <p class="eyebrow">{{ t('eyebrow') }}</p>
+      <h1>{{ t('appTitle') }}</h1>
+      <p class="subtitle">{{ t('subtitle') }}</p>
+    </div>
+    <button class="button button-primary top-action" type="button" (click)="showCreateForm.set(!showCreateForm())">
+      <span aria-hidden="true">＋</span> {{ t('addOrganisation') }}
+    </button>
+  </header>
+
+  @if (notice()) {
+    <div class="notice" role="status">
+      <span>{{ notice() }}</span>
+      <button type="button" class="icon-button" (click)="notice.set('')" [attr.aria-label]="t('dismiss')">×</button>
+    </div>
+  }
+
+  <section class="summary-grid" aria-label="Directory summary">
+    <article class="summary-card">
+      <span class="summary-icon">▦</span>
+      <div><p>{{ t('totalOrganisations') }}</p><strong>{{ organisations().length | number }}</strong></div>
+    </article>
+    <article class="summary-card">
+      <span class="summary-icon summary-icon-green">●</span>
+      <div><p>{{ t('active') }}</p><strong>{{ activeCount() | number }}</strong></div>
+    </article>
+    <article class="summary-card">
+      <span class="summary-icon summary-icon-purple">⌕</span>
+      <div><p>{{ t('paginationNote') }}</p><strong>{{ filteredOrganisations().length | number }}</strong></div>
+    </article>
+  </section>
+
+  @if (showCreateForm()) {
+    <section class="create-panel">
+      <div class="panel-heading">
+        <div>
+          <h2>{{ t('createTitle') }}</h2>
+          <p>{{ t('createSubtitle') }}</p>
+        </div>
+        <button class="icon-button" type="button" (click)="showCreateForm.set(false)" [attr.aria-label]="t('cancel')">×</button>
+      </div>
+      <form [formGroup]="createForm" (ngSubmit)="createOrganisation()" novalidate>
+        <div class="form-grid">
+          <label class="field">
+            <span>{{ t('nameLabel') }} <b>*</b></span>
+            <input formControlName="name" [placeholder]="t('namePlaceholder')" (blur)="createForm.controls.name.markAsTouched()" [attr.aria-invalid]="isInvalid('name')" />
+            @if (isInvalid('name')) { <small class="field-error">{{ fieldError('name') }}</small> }
+          </label>
+          <label class="field">
+            <span>{{ t('statusLabel') }} <b>*</b></span>
+            <select formControlName="status" (blur)="createForm.controls.status.markAsTouched()">
+              @for (status of statuses; track status) {
+                <option [value]="status">{{ t(status) }}</option>
+              }
+            </select>
+            @if (isInvalid('status')) { <small class="field-error">{{ fieldError('status') }}</small> }
+          </label>
+          <label class="field">
+            <span>{{ t('ownerLabel') }} <b>*</b></span>
+            <input type="email" formControlName="ownerEmail" [placeholder]="t('ownerPlaceholder')" (blur)="createForm.controls.ownerEmail.markAsTouched()" [attr.aria-invalid]="isInvalid('ownerEmail')" />
+            @if (isInvalid('ownerEmail')) { <small class="field-error">{{ fieldError('ownerEmail') }}</small> }
+          </label>
+          <label class="field">
+            <span>{{ t('membersLabel') }}</span>
+            <input type="number" min="0" step="1" formControlName="memberCount" (blur)="createForm.controls.memberCount.markAsTouched()" [attr.aria-invalid]="isInvalid('memberCount')" />
+            @if (isInvalid('memberCount')) { <small class="field-error">{{ fieldError('memberCount') }}</small> }
+          </label>
+        </div>
+        @if (formError()) { <p class="form-alert" role="alert">{{ formError() }}</p> }
+        <div class="form-actions">
+          <button type="button" class="button button-quiet" (click)="showCreateForm.set(false)">{{ t('cancel') }}</button>
+          <button type="submit" class="button button-primary" [disabled]="isSaving()">{{ isSaving() ? t('saving') : t('save') }}</button>
+        </div>
+      </form>
+    </section>
+  }
+
+  <section class="directory-card">
+    <div class="directory-heading">
+      <div>
+        <h2>Organisations</h2>
+        <p>Browse and manage organisation records</p>
+      </div>
+      <div class="toolbar">
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input #searchInput [value]="query()" (input)="updateQuery(searchInput.value)" [placeholder]="t('searchPlaceholder')" aria-label="Search organisations" />
+          @if (query()) {
+            <button type="button" class="clear-search" (click)="searchInput.value=''; updateQuery('')" aria-label="Clear search">×</button>
+          }
+        </label>
+        <select class="status-filter" [value]="statusFilter()" (change)="updateStatus($any($event.target).value)" aria-label="Filter by status">
+          <option value="all">{{ t('statusAll') }}</option>
+          @for (status of statuses; track status) { <option [value]="status">{{ t(status) }}</option> }
+        </select>
+        <select class="sort-filter" [value]="sortKey()" (change)="setSort($any($event.target).value)" aria-label="Sort organisations">
+          <option value="name">{{ t('sortName') }}</option>
+          <option value="createdAt">{{ t('sortDate') }}</option>
+        </select>
+      </div>
+    </div>
+
+    @if (state() === 'loading') {
+      <div class="state-panel" role="status">
+        <span class="spinner" aria-hidden="true"></span>
+        <strong>{{ t('loading') }}</strong>
+        <div class="skeleton-row"></div><div class="skeleton-row"></div><div class="skeleton-row"></div>
+      </div>
+    } @else if (state() === 'error') {
+      <div class="state-panel state-error" role="alert">
+        <span class="state-symbol">!</span>
+        <h3>{{ t('loadErrorTitle') }}</h3>
+        <p>{{ t('loadErrorBody') }}</p>
+        <button class="button button-primary" type="button" (click)="load()">{{ t('retry') }}</button>
+      </div>
+    } @else if (filteredOrganisations().length === 0) {
+      <div class="state-panel">
+        <span class="state-symbol">⌕</span>
+        <h3>{{ t('emptyTitle') }}</h3>
+        <p>{{ t('emptyBody') }}</p>
+        <button class="button button-secondary" type="button" (click)="showCreateForm.set(true)">{{ t('addOrganisation') }}</button>
+      </div>
+    } @else {
+      <div class="table-scroll">
+        <table>
+          <thead>
+            <tr>
+              <th><button class="th-sort" type="button" (click)="setSort('name')">{{ t('name') }} <span>↕</span></button></th>
+              <th>{{ t('status') }}</th>
+              <th>{{ t('members') }}</th>
+              <th>{{ t('owner') }}</th>
+              <th><button class="th-sort" type="button" (click)="setSort('createdAt')">{{ t('created') }} <span>↕</span></button></th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (organisation of filteredOrganisations(); track $index) {
+              <tr>
+                <td class="organisation-cell">
+                  <span class="org-avatar" aria-hidden="true">{{ organisation.name.charAt(0).toUpperCase() }}</span>
+                  <span class="org-name" [title]="organisation.name">{{ organisation.name }}</span>
+                </td>
+                <td>
+                  <span class="status-pill" [class.status-active]="organisation.status === 'active'" [class.status-inactive]="organisation.status === 'inactive'" [class.status-suspended]="organisation.status === 'suspended'" [class.status-unknown]="organisation.status === 'unknown'">
+                    <span class="status-dot" aria-hidden="true"></span>{{ t(organisation.status) }}
+                  </span>
+                </td>
+                <td class="member-count">{{ organisation.memberCount === null ? t('unknownMembers') : (organisation.memberCount | number) }}</td>
+                <td class="owner-cell" [title]="organisation.ownerEmail || t('unknownOwner')">{{ organisation.ownerEmail || t('unknownOwner') }}</td>
+                <td class="date-cell">{{ organisation.createdAt ? (organisation.createdAt | date:'dd MMM yyyy') : t('unknownDate') }}</td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+      <div class="table-footer"><span>Showing {{ filteredOrganisations().length }} of {{ organisations().length }} records</span><span class="footer-status"><span class="live-dot"></span> Directory loaded</span></div>
+    }
+  </section>
+  <footer class="page-footer"><span>Organisation Directory</span><span>Operations workspace <b>•</b> Angular</span></footer>
+</main>

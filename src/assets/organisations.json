@@ -1,0 +1,1379 @@
+[
+  {
+    "id": 1,
+    "name": "Northwind Traders",
+    "status": "active",
+    "memberCount": 42,
+    "owner": {
+      "email": "ops@northwind.example"
+    },
+    "createdAt": "2024-03-11T09:12:00Z"
+  },
+  {
+    "id": 2,
+    "name": "",
+    "status": "ACTIVE",
+    "memberCount": "12",
+    "owner": {
+      "email": "a@b.example"
+    },
+    "createdAt": 1710150720000
+  },
+  {
+    "id": 3,
+    "name": null,
+    "status": "Active",
+    "memberCount": -1,
+    "createdAt": "2024-01-02T00:00:00Z"
+  },
+  {
+    "id": 42,
+    "name": "Globex Corporation",
+    "status": "suspended",
+    "memberCount": 7,
+    "owner": {
+      "email": "hq@globex.example"
+    },
+    "createdAt": "2023-11-30T14:45:10Z"
+  },
+  {
+    "id": 42,
+    "name": "Globex Corporation Ltd",
+    "status": "actve",
+    "memberCount": 7,
+    "owner": {
+      "email": "hq@globex.example"
+    },
+    "createdAt": "2023-11-30T14:45:10Z"
+  },
+  {
+    "id": 6,
+    "name": "‫شركة الأمل‬ 🚀    ",
+    "status": "active",
+    "memberCount": 3,
+    "owner": {
+      "email": "info@amal.example"
+    },
+    "createdAt": "2025-06-01T08:00:00Z"
+  },
+  {
+    "id": 7,
+    "name": "The Very Long Organisation Name That Somebody Actually Typed Into The Field Because Nobody Validated It And It Keeps Going Well Past Any Reasonable Column Width And Still Has Not Stopped",
+    "status": "inactive",
+    "memberCount": 0,
+    "owner": {
+      "email": "long@example.com"
+    },
+    "createdAt": "2024-07-19T16:20:00Z"
+  },
+  {
+    "id": 8,
+    "name": "Initech",
+    "status": null,
+    "memberCount": null,
+    "owner": {
+      "email": "not-an-email"
+    },
+    "createdAt": "not a date"
+  },
+  {
+    "id": 9,
+    "name": "Acme Group",
+    "status": null,
+    "memberCount": 63,
+    "owner": {
+      "email": "owner9@example.test"
+    },
+    "createdAt": "2026-10-10T10:30:00Z"
+  },
+  {
+    "id": 10,
+    "name": "Bluebird Systems",
+    "status": "suspended",
+    "memberCount": 70,
+    "owner": {
+      "email": "owner10@example.test"
+    },
+    "createdAt": "2022-11-11T10:30:00Z"
+  },
+  {
+    "id": 11,
+    "name": "Cedar Labs",
+    "status": "actve",
+    "memberCount": 77,
+    "owner": {
+      "email": "owner11@example.test"
+    },
+    "createdAt": "2023-12-12T10:30:00Z"
+  },
+  {
+    "id": 12,
+    "name": "Delta Works",
+    "status": "inactive",
+    "memberCount": 84,
+    "owner": {
+      "email": "owner12@example.test"
+    },
+    "createdAt": "2024-01-13T10:30:00Z"
+  },
+  {
+    "id": 13,
+    "name": "Evergreen Partners",
+    "status": "Active",
+    "memberCount": 91,
+    "owner": {},
+    "createdAt": "2025-02-14T10:30:00Z"
+  },
+  {
+    "id": 14,
+    "name": "Fabrikam Studio",
+    "status": "active",
+    "memberCount": 98,
+    "owner": {
+      "email": "owner14@example.test"
+    },
+    "createdAt": "2026-03-15T10:30:00Z"
+  },
+  {
+    "id": 15,
+    "name": "Granite Health",
+    "status": "ACTIVE",
+    "memberCount": 105,
+    "owner": {
+      "email": "owner15@example.test"
+    },
+    "createdAt": "2022-04-16T10:30:00Z"
+  },
+  {
+    "id": 16,
+    "name": "Helios Logistics",
+    "status": null,
+    "memberCount": 112,
+    "owner": {
+      "email": "owner16@example.test"
+    },
+    "createdAt": "2023-05-17T10:30:00Z"
+  },
+  {
+    "id": 17,
+    "name": "Ivory Analytics 3",
+    "status": "suspended",
+    "memberCount": 119,
+    "owner": {
+      "email": "owner17@example.test"
+    },
+    "createdAt": "2024-06-18T10:30:00Z"
+  },
+  {
+    "id": 18,
+    "name": "Juniper Retail",
+    "status": "actve",
+    "memberCount": 126,
+    "owner": {
+      "email": "owner18@example.test"
+    },
+    "createdAt": "2025-07-19T10:30:00Z"
+  },
+  {
+    "id": 19,
+    "name": "Keystone Digital",
+    "status": "inactive",
+    "memberCount": "133",
+    "owner": {
+      "email": "owner19@example.test"
+    },
+    "createdAt": "2026-08-20T10:30:00Z"
+  },
+  {
+    "id": 20,
+    "name": "Lighthouse Media",
+    "status": "Active",
+    "memberCount": 140,
+    "owner": {
+      "email": "owner20@example.test"
+    },
+    "createdAt": "2022-09-21T10:30:00Z"
+  },
+  {
+    "id": 21,
+    "name": "Monarch Foods",
+    "status": "active",
+    "memberCount": 147,
+    "owner": {
+      "email": "owner21@example.test"
+    },
+    "createdAt": "2023-10-22T10:30:00Z"
+  },
+  {
+    "id": 22,
+    "name": "Nimbus Cloud",
+    "status": "ACTIVE",
+    "memberCount": 154,
+    "owner": {
+      "email": "owner22@example.test"
+    },
+    "createdAt": "2024-11-23T10:30:00Z"
+  },
+  {
+    "id": 23,
+    "name": "Orchid Services",
+    "status": null,
+    "memberCount": -2,
+    "owner": {
+      "email": "owner23@example.test"
+    },
+    "createdAt": "2025-12-24T10:30:00Z"
+  },
+  {
+    "id": 24,
+    "name": "Pioneer Energy",
+    "status": "suspended",
+    "memberCount": 168,
+    "owner": {
+      "email": "owner24@example.test"
+    },
+    "createdAt": "2026-01-25T10:30:00Z"
+  },
+  {
+    "id": 25,
+    "name": "Quartz Consulting",
+    "status": "actve",
+    "memberCount": 175,
+    "owner": {
+      "email": "owner25@example.test"
+    },
+    "createdAt": "2022-02-26T10:30:00Z"
+  },
+  {
+    "id": 26,
+    "name": "Redwood Finance",
+    "status": "inactive",
+    "memberCount": 2,
+    "owner": {},
+    "createdAt": "2023-03-27T10:30:00Z"
+  },
+  {
+    "id": 27,
+    "name": "Summit Learning",
+    "status": "Active",
+    "memberCount": 9,
+    "owner": {
+      "email": "owner27@example.test"
+    },
+    "createdAt": "2024-04-01T10:30:00Z"
+  },
+  {
+    "id": 28,
+    "name": "Tandem Mobility",
+    "status": "active",
+    "memberCount": 16,
+    "owner": {
+      "email": "owner28@example.test"
+    },
+    "createdAt": "2025-05-02T10:30:00Z"
+  },
+  {
+    "id": 29,
+    "name": "Acme Group",
+    "status": "ACTIVE",
+    "memberCount": 23,
+    "owner": {
+      "email": "owner29@example.test"
+    },
+    "createdAt": "not a date"
+  },
+  {
+    "id": 30,
+    "name": "Bluebird Systems",
+    "status": null,
+    "memberCount": 30,
+    "owner": {
+      "email": "owner30@example.test"
+    },
+    "createdAt": "2022-07-04T10:30:00Z"
+  },
+  {
+    "id": 42,
+    "name": "Cedar Labs",
+    "status": "suspended",
+    "memberCount": 37,
+    "owner": {
+      "email": "owner31@example.test"
+    },
+    "createdAt": "2023-08-05T10:30:00Z"
+  },
+  {
+    "id": 32,
+    "name": "Delta Works",
+    "status": "actve",
+    "memberCount": 44,
+    "owner": {
+      "email": "owner32@example.test"
+    },
+    "createdAt": "2024-09-06T10:30:00Z"
+  },
+  {
+    "id": 33,
+    "name": "Evergreen Partners",
+    "status": "inactive",
+    "memberCount": 51,
+    "owner": {
+      "email": "owner33@example.test"
+    },
+    "createdAt": "2025-10-07T10:30:00Z"
+  },
+  {
+    "id": 34,
+    "name": "Fabrikam Studio 6",
+    "status": "Active",
+    "memberCount": 58,
+    "owner": {
+      "email": "owner34@example.test"
+    },
+    "createdAt": "2026-11-08T10:30:00Z"
+  },
+  {
+    "id": 35,
+    "name": "Granite Health",
+    "status": "active",
+    "memberCount": 65,
+    "owner": {
+      "email": "owner35@example.test"
+    },
+    "createdAt": "2022-12-09T10:30:00Z"
+  },
+  {
+    "id": 36,
+    "name": "Helios Logistics",
+    "status": "ACTIVE",
+    "memberCount": 72,
+    "owner": {
+      "email": "owner36@example.test"
+    },
+    "createdAt": "2023-01-10T10:30:00Z"
+  },
+  {
+    "id": 37,
+    "name": "Ivory Analytics",
+    "status": null,
+    "memberCount": 79,
+    "owner": {
+      "email": "owner37@example.test"
+    },
+    "createdAt": "2024-02-11T10:30:00Z"
+  },
+  {
+    "id": 38,
+    "name": "Juniper Retail",
+    "status": "suspended",
+    "memberCount": "86",
+    "owner": {
+      "email": "owner38@example.test"
+    },
+    "createdAt": "2025-03-12T10:30:00Z"
+  },
+  {
+    "id": 39,
+    "name": "Keystone Digital",
+    "status": "actve",
+    "memberCount": 93,
+    "owner": {},
+    "createdAt": "2026-04-13T10:30:00Z"
+  },
+  {
+    "id": 40,
+    "name": "Lighthouse Media",
+    "status": "inactive",
+    "memberCount": 100,
+    "owner": {
+      "email": "owner40@example.test"
+    },
+    "createdAt": "2022-05-14T10:30:00Z"
+  },
+  {
+    "id": 41,
+    "name": "Monarch Foods",
+    "status": "Active",
+    "memberCount": 107,
+    "owner": {
+      "email": "owner41@example.test"
+    },
+    "createdAt": "2023-06-15T10:30:00Z"
+  },
+  {
+    "id": 42,
+    "name": "Nimbus Cloud",
+    "status": "active",
+    "memberCount": 114,
+    "owner": {
+      "email": "owner42@example.test"
+    },
+    "createdAt": "2024-07-16T10:30:00Z"
+  },
+  {
+    "id": 43,
+    "name": "Orchid Services",
+    "status": "ACTIVE",
+    "memberCount": 121,
+    "owner": {
+      "email": "owner43@example.test"
+    },
+    "createdAt": "2025-08-17T10:30:00Z"
+  },
+  {
+    "id": 44,
+    "name": "Pioneer Energy",
+    "status": null,
+    "memberCount": 128,
+    "owner": {
+      "email": "owner44@example.test"
+    },
+    "createdAt": "2026-09-18T10:30:00Z"
+  },
+  {
+    "id": 45,
+    "name": "Quartz Consulting",
+    "status": "suspended",
+    "memberCount": 135,
+    "owner": {
+      "email": "owner45@example.test"
+    },
+    "createdAt": "2022-10-19T10:30:00Z"
+  },
+  {
+    "id": 46,
+    "name": "Redwood Finance",
+    "status": "actve",
+    "memberCount": -2,
+    "owner": {
+      "email": "owner46@example.test"
+    },
+    "createdAt": "2023-11-20T10:30:00Z"
+  },
+  {
+    "id": 47,
+    "name": "Summit Learning",
+    "status": "inactive",
+    "memberCount": 149,
+    "owner": {
+      "email": "owner47@example.test"
+    },
+    "createdAt": "2024-12-21T10:30:00Z"
+  },
+  {
+    "id": 48,
+    "name": "Tandem Mobility",
+    "status": "Active",
+    "memberCount": 156,
+    "owner": {
+      "email": "owner48@example.test"
+    },
+    "createdAt": "2025-01-22T10:30:00Z"
+  },
+  {
+    "id": 49,
+    "name": "Acme Group",
+    "status": "active",
+    "memberCount": 163,
+    "owner": {
+      "email": "owner49@example.test"
+    },
+    "createdAt": "2026-02-23T10:30:00Z"
+  },
+  {
+    "id": 50,
+    "name": "Bluebird Systems",
+    "status": "ACTIVE",
+    "memberCount": 170,
+    "owner": {
+      "email": "owner50@example.test"
+    },
+    "createdAt": "2022-03-24T10:30:00Z"
+  },
+  {
+    "id": 51,
+    "name": "Cedar Labs 2",
+    "status": null,
+    "memberCount": 177,
+    "owner": {
+      "email": "owner51@example.test"
+    },
+    "createdAt": "2023-04-25T10:30:00Z"
+  },
+  {
+    "id": 52,
+    "name": "Delta Works",
+    "status": "suspended",
+    "memberCount": 4,
+    "owner": {},
+    "createdAt": "2024-05-26T10:30:00Z"
+  },
+  {
+    "id": 53,
+    "name": "Evergreen Partners",
+    "status": "actve",
+    "memberCount": 11,
+    "owner": {
+      "email": "owner53@example.test"
+    },
+    "createdAt": "2025-06-27T10:30:00Z"
+  },
+  {
+    "id": 54,
+    "name": "Fabrikam Studio",
+    "status": "inactive",
+    "memberCount": 18,
+    "owner": {
+      "email": "owner54@example.test"
+    },
+    "createdAt": "2026-07-01T10:30:00Z"
+  },
+  {
+    "id": 55,
+    "name": "Granite Health",
+    "status": "Active",
+    "memberCount": 25,
+    "owner": {
+      "email": "owner55@example.test"
+    },
+    "createdAt": "2022-08-02T10:30:00Z"
+  },
+  {
+    "id": 56,
+    "name": "Helios Logistics",
+    "status": "active",
+    "memberCount": 32,
+    "owner": {
+      "email": "owner56@example.test"
+    },
+    "createdAt": "2023-09-03T10:30:00Z"
+  },
+  {
+    "id": 57,
+    "name": "Ivory Analytics",
+    "status": "ACTIVE",
+    "memberCount": "39",
+    "owner": {
+      "email": "owner57@example.test"
+    },
+    "createdAt": "2024-10-04T10:30:00Z"
+  },
+  {
+    "id": 58,
+    "name": "Juniper Retail",
+    "status": null,
+    "memberCount": 46,
+    "owner": {
+      "email": "owner58@example.test"
+    },
+    "createdAt": "not a date"
+  },
+  {
+    "id": 59,
+    "name": "Keystone Digital",
+    "status": "suspended",
+    "memberCount": 53,
+    "owner": {
+      "email": "owner59@example.test"
+    },
+    "createdAt": "2026-12-06T10:30:00Z"
+  },
+  {
+    "id": 60,
+    "name": "Lighthouse Media",
+    "status": "actve",
+    "memberCount": 60,
+    "owner": {
+      "email": "owner60@example.test"
+    },
+    "createdAt": "2022-01-07T10:30:00Z"
+  },
+  {
+    "id": 61,
+    "name": "Monarch Foods",
+    "status": "inactive",
+    "memberCount": 67,
+    "owner": {
+      "email": "owner61@example.test"
+    },
+    "createdAt": "2023-02-08T10:30:00Z"
+  },
+  {
+    "id": 42,
+    "name": "Nimbus Cloud",
+    "status": "Active",
+    "memberCount": 74,
+    "owner": {
+      "email": "owner62@example.test"
+    },
+    "createdAt": "2024-03-09T10:30:00Z"
+  },
+  {
+    "id": 63,
+    "name": "Orchid Services",
+    "status": "active",
+    "memberCount": 81,
+    "owner": {
+      "email": "owner63@example.test"
+    },
+    "createdAt": "2025-04-10T10:30:00Z"
+  },
+  {
+    "id": 64,
+    "name": "Pioneer Energy",
+    "status": "ACTIVE",
+    "memberCount": 88,
+    "owner": {
+      "email": "owner64@example.test"
+    },
+    "createdAt": "2026-05-11T10:30:00Z"
+  },
+  {
+    "id": 65,
+    "name": "Quartz Consulting",
+    "status": null,
+    "memberCount": 95,
+    "owner": {},
+    "createdAt": "2022-06-12T10:30:00Z"
+  },
+  {
+    "id": 66,
+    "name": "Redwood Finance",
+    "status": "suspended",
+    "memberCount": 102,
+    "owner": {
+      "email": "owner66@example.test"
+    },
+    "createdAt": "2023-07-13T10:30:00Z"
+  },
+  {
+    "id": 67,
+    "name": "Summit Learning",
+    "status": "actve",
+    "memberCount": 109,
+    "owner": {
+      "email": "owner67@example.test"
+    },
+    "createdAt": "2024-08-14T10:30:00Z"
+  },
+  {
+    "id": 68,
+    "name": "Tandem Mobility 5",
+    "status": "inactive",
+    "memberCount": 116,
+    "owner": {
+      "email": "owner68@example.test"
+    },
+    "createdAt": "2025-09-15T10:30:00Z"
+  },
+  {
+    "id": 69,
+    "name": "Acme Group",
+    "status": "Active",
+    "memberCount": -2,
+    "owner": {
+      "email": "owner69@example.test"
+    },
+    "createdAt": "2026-10-16T10:30:00Z"
+  },
+  {
+    "id": 70,
+    "name": "Bluebird Systems",
+    "status": "active",
+    "memberCount": 130,
+    "owner": {
+      "email": "owner70@example.test"
+    },
+    "createdAt": "2022-11-17T10:30:00Z"
+  },
+  {
+    "id": 71,
+    "name": "Cedar Labs",
+    "status": "ACTIVE",
+    "memberCount": 137,
+    "owner": {
+      "email": "owner71@example.test"
+    },
+    "createdAt": "2023-12-18T10:30:00Z"
+  },
+  {
+    "id": 72,
+    "name": "Delta Works",
+    "status": null,
+    "memberCount": 144,
+    "owner": {
+      "email": "owner72@example.test"
+    },
+    "createdAt": "2024-01-19T10:30:00Z"
+  },
+  {
+    "id": 73,
+    "name": "Evergreen Partners",
+    "status": "suspended",
+    "memberCount": 151,
+    "owner": {
+      "email": "owner73@example.test"
+    },
+    "createdAt": "2025-02-20T10:30:00Z"
+  },
+  {
+    "id": 74,
+    "name": "Fabrikam Studio",
+    "status": "actve",
+    "memberCount": 158,
+    "owner": {
+      "email": "owner74@example.test"
+    },
+    "createdAt": "2026-03-21T10:30:00Z"
+  },
+  {
+    "id": 75,
+    "name": "Granite Health",
+    "status": "inactive",
+    "memberCount": 165,
+    "owner": {
+      "email": "owner75@example.test"
+    },
+    "createdAt": "2022-04-22T10:30:00Z"
+  },
+  {
+    "id": 76,
+    "name": "Helios Logistics",
+    "status": "Active",
+    "memberCount": "172",
+    "owner": {
+      "email": "owner76@example.test"
+    },
+    "createdAt": "2023-05-23T10:30:00Z"
+  },
+  {
+    "id": 77,
+    "name": "Ivory Analytics",
+    "status": "active",
+    "memberCount": 179,
+    "owner": {
+      "email": "owner77@example.test"
+    },
+    "createdAt": "2024-06-24T10:30:00Z"
+  },
+  {
+    "id": 78,
+    "name": "Juniper Retail",
+    "status": "ACTIVE",
+    "memberCount": 6,
+    "owner": {},
+    "createdAt": "2025-07-25T10:30:00Z"
+  },
+  {
+    "id": 79,
+    "name": "Keystone Digital",
+    "status": null,
+    "memberCount": 13,
+    "owner": {
+      "email": "owner79@example.test"
+    },
+    "createdAt": "2026-08-26T10:30:00Z"
+  },
+  {
+    "id": 80,
+    "name": "Lighthouse Media",
+    "status": "suspended",
+    "memberCount": 20,
+    "owner": {
+      "email": "owner80@example.test"
+    },
+    "createdAt": "2022-09-27T10:30:00Z"
+  },
+  {
+    "id": 81,
+    "name": "Monarch Foods",
+    "status": "actve",
+    "memberCount": 27,
+    "owner": {
+      "email": "owner81@example.test"
+    },
+    "createdAt": "2023-10-01T10:30:00Z"
+  },
+  {
+    "id": 82,
+    "name": "Nimbus Cloud",
+    "status": "inactive",
+    "memberCount": 34,
+    "owner": {
+      "email": "owner82@example.test"
+    },
+    "createdAt": "2024-11-02T10:30:00Z"
+  },
+  {
+    "id": 83,
+    "name": "Orchid Services",
+    "status": "Active",
+    "memberCount": 41,
+    "owner": {
+      "email": "owner83@example.test"
+    },
+    "createdAt": "2025-12-03T10:30:00Z"
+  },
+  {
+    "id": 84,
+    "name": "Pioneer Energy",
+    "status": "active",
+    "memberCount": 48,
+    "owner": {
+      "email": "owner84@example.test"
+    },
+    "createdAt": "2026-01-04T10:30:00Z"
+  },
+  {
+    "id": 85,
+    "name": "Quartz Consulting 1",
+    "status": "ACTIVE",
+    "memberCount": 55,
+    "owner": {
+      "email": "owner85@example.test"
+    },
+    "createdAt": "2022-02-05T10:30:00Z"
+  },
+  {
+    "id": 86,
+    "name": "Redwood Finance",
+    "status": null,
+    "memberCount": 62,
+    "owner": {
+      "email": "owner86@example.test"
+    },
+    "createdAt": "2023-03-06T10:30:00Z"
+  },
+  {
+    "id": 87,
+    "name": "Summit Learning",
+    "status": "suspended",
+    "memberCount": 69,
+    "owner": {
+      "email": "owner87@example.test"
+    },
+    "createdAt": "not a date"
+  },
+  {
+    "id": 88,
+    "name": "Tandem Mobility",
+    "status": "actve",
+    "memberCount": 76,
+    "owner": {
+      "email": "owner88@example.test"
+    },
+    "createdAt": "2025-05-08T10:30:00Z"
+  },
+  {
+    "id": 89,
+    "name": "Acme Group",
+    "status": "inactive",
+    "memberCount": 83,
+    "owner": {
+      "email": "owner89@example.test"
+    },
+    "createdAt": "2026-06-09T10:30:00Z"
+  },
+  {
+    "id": 90,
+    "name": "Bluebird Systems",
+    "status": "Active",
+    "memberCount": 90,
+    "owner": {
+      "email": "owner90@example.test"
+    },
+    "createdAt": "2022-07-10T10:30:00Z"
+  },
+  {
+    "id": 91,
+    "name": "Cedar Labs",
+    "status": "active",
+    "memberCount": 97,
+    "owner": {},
+    "createdAt": "2023-08-11T10:30:00Z"
+  },
+  {
+    "id": 92,
+    "name": "Delta Works",
+    "status": "ACTIVE",
+    "memberCount": -2,
+    "owner": {
+      "email": "owner92@example.test"
+    },
+    "createdAt": "2024-09-12T10:30:00Z"
+  },
+  {
+    "id": 42,
+    "name": "Evergreen Partners",
+    "status": null,
+    "memberCount": 111,
+    "owner": {
+      "email": "owner93@example.test"
+    },
+    "createdAt": "2025-10-13T10:30:00Z"
+  },
+  {
+    "id": 94,
+    "name": "Fabrikam Studio",
+    "status": "suspended",
+    "memberCount": 118,
+    "owner": {
+      "email": "owner94@example.test"
+    },
+    "createdAt": "2026-11-14T10:30:00Z"
+  },
+  {
+    "id": 95,
+    "name": "Granite Health",
+    "status": "actve",
+    "memberCount": "125",
+    "owner": {
+      "email": "owner95@example.test"
+    },
+    "createdAt": "2022-12-15T10:30:00Z"
+  },
+  {
+    "id": 96,
+    "name": "Helios Logistics",
+    "status": "inactive",
+    "memberCount": 132,
+    "owner": {
+      "email": "owner96@example.test"
+    },
+    "createdAt": "2023-01-16T10:30:00Z"
+  },
+  {
+    "id": 97,
+    "name": "Ivory Analytics",
+    "status": "Active",
+    "memberCount": 139,
+    "owner": {
+      "email": "owner97@example.test"
+    },
+    "createdAt": "2024-02-17T10:30:00Z"
+  },
+  {
+    "id": 98,
+    "name": "Juniper Retail",
+    "status": "active",
+    "memberCount": 146,
+    "owner": {
+      "email": "owner98@example.test"
+    },
+    "createdAt": "2025-03-18T10:30:00Z"
+  },
+  {
+    "id": 99,
+    "name": "Keystone Digital",
+    "status": "ACTIVE",
+    "memberCount": 153,
+    "owner": {
+      "email": "owner99@example.test"
+    },
+    "createdAt": "2026-04-19T10:30:00Z"
+  },
+  {
+    "id": 100,
+    "name": "Lighthouse Media",
+    "status": null,
+    "memberCount": 160,
+    "owner": {
+      "email": "owner100@example.test"
+    },
+    "createdAt": "2022-05-20T10:30:00Z"
+  },
+  {
+    "id": 101,
+    "name": "Monarch Foods",
+    "status": "suspended",
+    "memberCount": 167,
+    "owner": {
+      "email": "owner101@example.test"
+    },
+    "createdAt": "2023-06-21T10:30:00Z"
+  },
+  {
+    "id": 102,
+    "name": "Nimbus Cloud 4",
+    "status": "actve",
+    "memberCount": 174,
+    "owner": {
+      "email": "owner102@example.test"
+    },
+    "createdAt": "2024-07-22T10:30:00Z"
+  },
+  {
+    "id": 103,
+    "name": "Orchid Services",
+    "status": "inactive",
+    "memberCount": 1,
+    "owner": {
+      "email": "owner103@example.test"
+    },
+    "createdAt": "2025-08-23T10:30:00Z"
+  },
+  {
+    "id": 104,
+    "name": "Pioneer Energy",
+    "status": "Active",
+    "memberCount": 8,
+    "owner": {},
+    "createdAt": "2026-09-24T10:30:00Z"
+  },
+  {
+    "id": 105,
+    "name": "Quartz Consulting",
+    "status": "active",
+    "memberCount": 15,
+    "owner": {
+      "email": "owner105@example.test"
+    },
+    "createdAt": "2022-10-25T10:30:00Z"
+  },
+  {
+    "id": 106,
+    "name": "Redwood Finance",
+    "status": "ACTIVE",
+    "memberCount": 22,
+    "owner": {
+      "email": "owner106@example.test"
+    },
+    "createdAt": "2023-11-26T10:30:00Z"
+  },
+  {
+    "id": 107,
+    "name": "Summit Learning",
+    "status": null,
+    "memberCount": 29,
+    "owner": {
+      "email": "owner107@example.test"
+    },
+    "createdAt": "2024-12-27T10:30:00Z"
+  },
+  {
+    "id": 108,
+    "name": "Tandem Mobility",
+    "status": "suspended",
+    "memberCount": 36,
+    "owner": {
+      "email": "owner108@example.test"
+    },
+    "createdAt": "2025-01-01T10:30:00Z"
+  },
+  {
+    "id": 109,
+    "name": "Acme Group",
+    "status": "actve",
+    "memberCount": 43,
+    "owner": {
+      "email": "owner109@example.test"
+    },
+    "createdAt": "2026-02-02T10:30:00Z"
+  },
+  {
+    "id": 110,
+    "name": "Bluebird Systems",
+    "status": "inactive",
+    "memberCount": 50,
+    "owner": {
+      "email": "owner110@example.test"
+    },
+    "createdAt": "2022-03-03T10:30:00Z"
+  },
+  {
+    "id": 111,
+    "name": "Cedar Labs",
+    "status": "Active",
+    "memberCount": 57,
+    "owner": {
+      "email": "owner111@example.test"
+    },
+    "createdAt": "2023-04-04T10:30:00Z"
+  },
+  {
+    "id": 112,
+    "name": "Delta Works",
+    "status": "active",
+    "memberCount": 64,
+    "owner": {
+      "email": "owner112@example.test"
+    },
+    "createdAt": "2024-05-05T10:30:00Z"
+  },
+  {
+    "id": 113,
+    "name": "Evergreen Partners",
+    "status": "ACTIVE",
+    "memberCount": 71,
+    "owner": {
+      "email": "owner113@example.test"
+    },
+    "createdAt": "2025-06-06T10:30:00Z"
+  },
+  {
+    "id": 114,
+    "name": "Fabrikam Studio",
+    "status": null,
+    "memberCount": "78",
+    "owner": {
+      "email": "owner114@example.test"
+    },
+    "createdAt": "2026-07-07T10:30:00Z"
+  },
+  {
+    "id": 115,
+    "name": "Granite Health",
+    "status": "suspended",
+    "memberCount": -2,
+    "owner": {
+      "email": "owner115@example.test"
+    },
+    "createdAt": "2022-08-08T10:30:00Z"
+  },
+  {
+    "id": 116,
+    "name": "Helios Logistics",
+    "status": "actve",
+    "memberCount": 92,
+    "owner": {
+      "email": "owner116@example.test"
+    },
+    "createdAt": "not a date"
+  },
+  {
+    "id": 117,
+    "name": "Ivory Analytics",
+    "status": "inactive",
+    "memberCount": 99,
+    "owner": {},
+    "createdAt": "2024-10-10T10:30:00Z"
+  },
+  {
+    "id": 118,
+    "name": "Juniper Retail",
+    "status": "Active",
+    "memberCount": 106,
+    "owner": {
+      "email": "owner118@example.test"
+    },
+    "createdAt": "2025-11-11T10:30:00Z"
+  },
+  {
+    "id": 119,
+    "name": "Keystone Digital 0",
+    "status": "active",
+    "memberCount": 113,
+    "owner": {
+      "email": "owner119@example.test"
+    },
+    "createdAt": "2026-12-12T10:30:00Z"
+  },
+  {
+    "id": 120,
+    "name": "Lighthouse Media",
+    "status": "ACTIVE",
+    "memberCount": 120,
+    "owner": {
+      "email": "owner120@example.test"
+    },
+    "createdAt": "2022-01-13T10:30:00Z"
+  },
+  {
+    "id": 121,
+    "name": "Monarch Foods",
+    "status": null,
+    "memberCount": 127,
+    "owner": {
+      "email": "owner121@example.test"
+    },
+    "createdAt": "2023-02-14T10:30:00Z"
+  },
+  {
+    "id": 122,
+    "name": "Nimbus Cloud",
+    "status": "suspended",
+    "memberCount": 134,
+    "owner": {
+      "email": "owner122@example.test"
+    },
+    "createdAt": "2024-03-15T10:30:00Z"
+  },
+  {
+    "id": 123,
+    "name": "Orchid Services",
+    "status": "actve",
+    "memberCount": 141,
+    "owner": {
+      "email": "owner123@example.test"
+    },
+    "createdAt": "2025-04-16T10:30:00Z"
+  },
+  {
+    "id": 42,
+    "name": "Pioneer Energy",
+    "status": "inactive",
+    "memberCount": 148,
+    "owner": {
+      "email": "owner124@example.test"
+    },
+    "createdAt": "2026-05-17T10:30:00Z"
+  },
+  {
+    "id": 125,
+    "name": "Quartz Consulting",
+    "status": "Active",
+    "memberCount": 155,
+    "owner": {
+      "email": "owner125@example.test"
+    },
+    "createdAt": "2022-06-18T10:30:00Z"
+  },
+  {
+    "id": 126,
+    "name": "Redwood Finance",
+    "status": "active",
+    "memberCount": 162,
+    "owner": {
+      "email": "owner126@example.test"
+    },
+    "createdAt": "2023-07-19T10:30:00Z"
+  },
+  {
+    "id": 127,
+    "name": "Summit Learning",
+    "status": "ACTIVE",
+    "memberCount": 169,
+    "owner": {
+      "email": "owner127@example.test"
+    },
+    "createdAt": "2024-08-20T10:30:00Z"
+  },
+  {
+    "id": 128,
+    "name": "Tandem Mobility",
+    "status": null,
+    "memberCount": 176,
+    "owner": {
+      "email": "owner128@example.test"
+    },
+    "createdAt": "2025-09-21T10:30:00Z"
+  },
+  {
+    "id": 129,
+    "name": "Acme Group",
+    "status": "suspended",
+    "memberCount": 3,
+    "owner": {
+      "email": "owner129@example.test"
+    },
+    "createdAt": "2026-10-22T10:30:00Z"
+  },
+  {
+    "id": 130,
+    "name": "Bluebird Systems",
+    "status": "actve",
+    "memberCount": 10,
+    "owner": {},
+    "createdAt": "2022-11-23T10:30:00Z"
+  },
+  {
+    "id": 131,
+    "name": "Cedar Labs",
+    "status": "inactive",
+    "memberCount": 17,
+    "owner": {
+      "email": "owner131@example.test"
+    },
+    "createdAt": "2023-12-24T10:30:00Z"
+  },
+  {
+    "id": 132,
+    "name": "Delta Works",
+    "status": "Active",
+    "memberCount": 24,
+    "owner": {
+      "email": "owner132@example.test"
+    },
+    "createdAt": "2024-01-25T10:30:00Z"
+  },
+  {
+    "id": 133,
+    "name": "Evergreen Partners",
+    "status": "active",
+    "memberCount": "31",
+    "owner": {
+      "email": "owner133@example.test"
+    },
+    "createdAt": "2025-02-26T10:30:00Z"
+  },
+  {
+    "id": 134,
+    "name": "Fabrikam Studio",
+    "status": "ACTIVE",
+    "memberCount": 38,
+    "owner": {
+      "email": "owner134@example.test"
+    },
+    "createdAt": "2026-03-27T10:30:00Z"
+  },
+  {
+    "id": 135,
+    "name": "Granite Health",
+    "status": null,
+    "memberCount": 45,
+    "owner": {
+      "email": "owner135@example.test"
+    },
+    "createdAt": "2022-04-01T10:30:00Z"
+  },
+  {
+    "id": 136,
+    "name": "Helios Logistics 3",
+    "status": "suspended",
+    "memberCount": 52,
+    "owner": {
+      "email": "owner136@example.test"
+    },
+    "createdAt": "2023-05-02T10:30:00Z"
+  },
+  {
+    "id": 137,
+    "name": "Ivory Analytics",
+    "status": "actve",
+    "memberCount": 59,
+    "owner": {
+      "email": "owner137@example.test"
+    },
+    "createdAt": "2024-06-03T10:30:00Z"
+  },
+  {
+    "id": 138,
+    "name": "Juniper Retail",
+    "status": "inactive",
+    "memberCount": -2,
+    "owner": {
+      "email": "owner138@example.test"
+    },
+    "createdAt": "2025-07-04T10:30:00Z"
+  },
+  {
+    "id": 139,
+    "name": "Keystone Digital",
+    "status": "Active",
+    "memberCount": 73,
+    "owner": {
+      "email": "owner139@example.test"
+    },
+    "createdAt": "2026-08-05T10:30:00Z"
+  },
+  {
+    "id": 140,
+    "name": "Lighthouse Media",
+    "status": "active",
+    "memberCount": 80,
+    "owner": {
+      "email": "owner140@example.test"
+    },
+    "createdAt": "2022-09-06T10:30:00Z"
+  }
+]
