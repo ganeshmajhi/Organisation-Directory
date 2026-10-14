@@ -14,7 +14,7 @@ export class OrganisationDataService {
       throw new Error('Simulated service failure');
     }
     const raw = await firstValueFrom(
-      this.http.get<RawOrganisation[]>('/assets/organisations.json')
+     this.http.get<RawOrganisation[]>('assets/organisations.json')
     );
     return raw.map((item, index) => this.normalise(item, index));
   }

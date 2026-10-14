@@ -172,7 +172,7 @@ export class AppComponent {
 
   private async loadMessages(): Promise<void> {
     try {
-      const response = await fetch('/assets/en.json');
+      const response = await fetch('assets/en.json');
       if (!response.ok) throw new Error('Translation file unavailable');
       this.messages.set(await response.json() as Messages);
     } catch {
